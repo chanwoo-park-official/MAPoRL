@@ -1,7 +1,7 @@
 
 # MaPoRL: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning
 
-This project implements a sophisticated multi-agent PPO (Proximal Policy Optimization) training system for cooperative language model training scenarios. It is based on the [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl) package. We are also planning to use Verl to make this easy to use, especially for the inference time scaling, so stay tuned!
+It is based on the [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl) package. We are also planning to use Verl to make this easy to use, especially for the inference time scaling, so stay tuned!
 
 ## Reward Verifier Training
 
