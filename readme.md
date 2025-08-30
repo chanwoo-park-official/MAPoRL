@@ -5,12 +5,12 @@ It is based on the [TRL (Transformer Reinforcement Learning)](https://github.com
 
 ## Reward Verifier Training
 
-First, if you want to train the verifier, you should use reward_gen_data.py
-Then, I additionally had the dataset balancing to make the verifier understand balanced right and wrong answers -- especially if the verifier only has the right answer for easy questions and the wrong answer for the hard questions, they might be trained to classify the difficulty of the questions. That can be balanced by reward_data_balancing.py, but you can also change it by whatever you want.
+First, if you want to train the verifier, you should start with reward_gen_data.py.
+After that, I applied dataset balancing so the verifier could learn to distinguish between correct and incorrect answers in a balanced way. Without balancing, the verifier might overfit — for example, if it only sees correct answers for easy questions and incorrect answers for hard ones, it may end up classifying based on question difficulty rather than answer correctness. This balancing can be done with reward_data_balancing.py, though you can adjust or implement your own method if preferred.
 
-Additionally, we might only use the answer label for this -- then you do not need reward verifier training.
+Additionally, in some cases we might only rely on the answer label directly. In that scenario, reward verifier training would not be necessary.
 
-For the reward_server.py, we used a separate server for the reward (so that we get information about the reward from a separate 1 A24 GPU.)
+Finally, regarding reward_server.py, we used a separate server for the reward process. This allowed us to offload reward computations to a dedicated A24 GPU, ensuring efficiency and separation from the main training loop.
 
 ## Multi-Agent PPO Training
 
