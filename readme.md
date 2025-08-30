@@ -6,7 +6,7 @@
 ## Reward Verifier Training
 
 First, if you want to train the verifier, you should start with reward_gen_data.py.
-After that, I applied dataset balancing so the verifier could learn to distinguish between correct and incorrect answers in a balanced way. Without balancing, the verifier might overfit — for example, if it only sees correct answers for easy questions and incorrect answers for hard ones, it may end up classifying based on question difficulty rather than answer correctness. This balancing can be done with reward_data_balancing.py, though you can adjust or implement your own method if preferred.
+After that, I applied dataset balancing so the verifier could learn to distinguish between correct and incorrect answers in a balanced way. Without balancing, the verifier might overfit — for example, if it only sees correct answers for easy questions and incorrect answers for hard ones, it may end up classifying based on question difficulty rather than answer correctness. This balancing can be done with reward_data_balancing.py, though you can adjust or implement your own method if preferred. (verifier model is not included in this repo)
 
 Additionally, in some cases we might only rely on the answer label directly. In that scenario, reward verifier training would not be necessary.
 
