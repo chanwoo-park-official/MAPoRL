@@ -1,7 +1,7 @@
 
 # MaPoRL: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning
 
-It is based on the [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl) package. We are also planning to use Verl to make this easy to use, especially for the inference time scaling, so stay tuned!
+(Aug 29, 2025) It is based on the [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl) package. We are also planning to use Verl to make this easy to use, especially for the inference time scaling, so stay tuned!
 
 ## Reward Verifier Training
 
